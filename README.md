@@ -41,6 +41,6 @@
 
 ### Challenges
 
-> Problem: i was unable to use both rounded-2xl and rounded-tr-full tailwind class
+> Problem: want to have hamburger menu on mobile and nav links on desktop.
 
-- **solution**:- i checked computed values in my dev tool for that element and it showed both values are applied the issue is 2xl value is really small and full value is really big in e so i used custom rem value for it and it solved my issue;
+- **solution**:- i separated both image and nav tag so i can hide one and show one depending on breakpoints.

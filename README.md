@@ -1,12 +1,46 @@
-# React + Vite
+# Table of contents
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [challenges](#challenges)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### The challenge
 
-## Expanding the ESLint configuration
+- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Screenshot
+
+- Desktop View
+
+![](./desktopView.jpeg)
+
+- Mobile View
+
+![](./mobileView.jpeg)
+
+### Links
+
+- Live Site URL: [https://github.com/akshay-ken/rookie-project-07](https://github.com/akshay-ken/rookie-project-07)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- clsx
+- Flexbox
+- Tailwind
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+
+### Challenges
+
+> Problem: i was unable to use both rounded-2xl and rounded-tr-full tailwind class
+
+- **solution**:- i checked computed values in my dev tool for that element and it showed both values are applied the issue is 2xl value is really small and full value is really big in e so i used custom rem value for it and it solved my issue;

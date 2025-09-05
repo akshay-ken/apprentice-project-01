@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@layer base {
+  body {
+    @apply font-one;
+  }
+}
 
 @theme {
   --color-Gray-50: hsl(0, 0%, 98%);
   --color-Gray-500: hsl(0, 0%, 41%);
   --color-Gray-950: hsl(0, 0%, 8%);
+  /* font */
+  --font-one: Epilogue;
 }

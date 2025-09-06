@@ -7,12 +7,12 @@ import clientFour from "../assets/images/client-meet.svg";
 
 export function HeroSection() {
   return (
-    <section className="md:px-[10vw] flex flex-col md:flex-row">
-      <div>
+    <section className="md:px-[10vw] flex flex-col md:grid md: md:grid-cols-2">
+      <div className="md:order-2 md:row-span-2 md:ml-33">
         <img src={heroMobile} className="block md:hidden" alt="" />
-        <img src={heroDesktop} className="hidden md:block" alt="" />
+        <img src={heroDesktop} className="hidden md:block h-[80vh]" alt="" />
       </div>
-      <div className="flex flex-col justify-evenly mt-12 items-center gap-y-6">
+      <div className="flex flex-col justify-evenly mt-12 items-center gap-y-6 md:order-1">
         <h1 className="text-4xl font-bold text-Gray-950">Make remote work</h1>
         <p className="px-6 text-center text-lg font-semibold text-Gray-500">
           Get your team in sync, no matter your location. Streamline processes,
@@ -22,7 +22,7 @@ export function HeroSection() {
           Learn more
         </button>
       </div>
-      <footer className="flex flex-row h-6 justify-around mt-14">
+      <footer className="flex flex-row h-6 justify-around mt-14 md:order-3 md:items-center md:mt-auto">
         <img src={clientOne} alt="" />
         <img src={clientTwo} alt="" />
         <img src={clientThree} alt="" />

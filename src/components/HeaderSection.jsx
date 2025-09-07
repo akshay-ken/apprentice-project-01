@@ -7,6 +7,7 @@ import iconCalendar from "../assets/images/icon-calendar.svg";
 import iconPlanning from "../assets/images/icon-planning.svg";
 import iconReminders from "../assets/images/icon-reminders.svg";
 import { useReducer } from "react";
+import { MobileMenu } from "./MobileMenu";
 
 const initialState = {
   features: {
@@ -40,6 +41,7 @@ export function HeaderSection() {
     <header className="px-4 md:px-6 py-6 md:py-8 flex flex-row justify-between md:justify-start items-center">
       <img src={logo} alt="" />
       <img src={menuOpen} className="block md:hidden" alt="" />
+      <MobileMenu />
       <nav className="hidden md:flex flex-row ml-20 justify-between w-full text-Gray-500 font-medium text-base">
         <ul className="flex flex-row gap-x-10 ">
           <li

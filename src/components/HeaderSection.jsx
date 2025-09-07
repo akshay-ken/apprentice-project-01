@@ -88,6 +88,13 @@ export function HeaderSection() {
             ) : (
               <img src={arrowDown} className="inline w-4 h-2 ml-2" alt="" />
             )}
+            {openState.company.isOpen ? (
+              <div className=" bg-Gray-50 shadow-[0_0_10px_1px_black] mt-2 absolute p-4 w-30 rounded-2xl flex flex-col items-start gap-2">
+                <p>History</p>
+                <p>Our Team</p>
+                <p>Blog</p>
+              </div>
+            ) : null}
           </li>
           <li>Careers</li>
           <li>About</li>

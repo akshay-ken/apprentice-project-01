@@ -80,9 +80,9 @@ export function MobileMenu({
             <li>Careers</li>
             <li>About</li>
           </ul>
-          <div className="flex flex-row mt-12 gap-x-10 font-normal text-base">
+          <div className="flex flex-col text-xl mt-12 gap-y-4 font-normal">
             <button>Login</button>
-            <button>Register</button>
+            <button className="ring-2 py-2 rounded-2xl">Register</button>
           </div>
         </nav>
       </div>

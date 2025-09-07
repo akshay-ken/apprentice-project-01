@@ -1,5 +1,7 @@
 import logo from "../assets/images/logo.svg";
 import menuOpen from "../assets/images/icon-menu.svg";
+import arrowUp from "../assets/images/icon-arrow-up.svg";
+import arrowDown from "../assets/images/icon-arrow-down.svg";
 import { useReducer } from "react";
 
 const initialState = {
@@ -38,13 +40,20 @@ export function HeaderSection() {
       <nav className="hidden md:flex flex-row ml-20 justify-between w-full text-Gray-500 font-medium text-base">
         <ul className="flex flex-row gap-x-10 ">
           <li
+            className="bg-lime-300"
             onClick={() => {
               dispatch({ type: "feat" });
             }}
           >
             Features
           </li>
-          <li>Company</li>
+          <li
+            onClick={() => {
+              dispatch({ type: "comp" });
+            }}
+          >
+            Company
+          </li>
           <li>Careers</li>
           <li>About</li>
         </ul>

@@ -70,7 +70,7 @@ export function MobileMenu({
                 <img src={arrowDown} className="inline w-4 h-2 ml-2" alt="" />
               )}
               {openState.company.isOpen ? (
-                <div className=" bg-Gray-50 shadow-[0_0_10px_1px_black] mt-2 absolute p-4 w-30 rounded-2xl flex flex-col items-start gap-2">
+                <div className="mt-6 pl-8 flex flex-col items-start gap-4">
                   <p>History</p>
                   <p>Our Team</p>
                   <p>Blog</p>
@@ -80,7 +80,7 @@ export function MobileMenu({
             <li>Careers</li>
             <li>About</li>
           </ul>
-          <div className="flex flex-row gap-x-10 font-normal text-base">
+          <div className="flex flex-row mt-12 gap-x-10 font-normal text-base">
             <button>Login</button>
             <button>Register</button>
           </div>

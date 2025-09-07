@@ -3,7 +3,7 @@ import { HeroSection } from "./HeroSection";
 
 export function MainPage() {
   return (
-    <main>
+    <main className="relative">
       <HeaderSection />
       <HeroSection />
     </main>

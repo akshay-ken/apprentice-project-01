@@ -60,8 +60,19 @@ export function HeaderSection() {
           dispatch({ type: "menu" });
         }}
       />
-      {openState.menu.isOpen ? <MobileMenu /> : null}
-      <nav className="hidden md:flex flex-row ml-20 justify-between w-full text-Gray-500 font-medium text-base">
+      {openState.menu.isOpen ? (
+        <MobileMenu
+          openState={openState}
+          dispatch={dispatch}
+          arrowDown={arrowDown}
+          arrowUp={arrowUp}
+          iconCalendar={iconCalendar}
+          iconPlanning={iconPlanning}
+          iconReminders={iconReminders}
+          iconTodo={iconTodo}
+        />
+      ) : null}
+      <nav className="hidden md:flex flex-col ml-20 justify-between w-full text-Gray-500 font-medium text-base">
         <ul className="flex flex-row gap-x-10 ">
           <li
             className="relative"

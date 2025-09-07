@@ -38,21 +38,21 @@ export function MobileMenu({
               )}
               {/* popover menu */}
               {openState.features.isOpen ? (
-                <div className=" bg-Gray-50 shadow-[0_0_10px_1px_black] mt-2 absolute p-4 w-38 -ml-12 rounded-2xl flex flex-col items-center gap-2">
+                <div className=" flex flex-col items-center gap-4 mt-6">
                   <div className="flex flex-row">
-                    <img src={iconTodo} className="size-4 mr-2" alt="" />
+                    <img src={iconTodo} className="size-6 mr-6" alt="" />
                     <p>Todo List</p>
                   </div>
                   <div className="flex flex-row">
-                    <img src={iconCalendar} alt="" className="size-4 mr-2" />
+                    <img src={iconCalendar} alt="" className="size-6 mr-6" />
                     <p>Calender</p>
                   </div>
                   <div className="flex flex-row">
-                    <img src={iconReminders} alt="" className="size-4 mr-2" />
+                    <img src={iconReminders} alt="" className="size-6 mr-6" />
                     <p>Reminder</p>
                   </div>
                   <div className="flex flex-row">
-                    <img src={iconPlanning} alt="" className="size-4 mr-2" />
+                    <img src={iconPlanning} alt="" className="size-6 mr-6" />
                     <p>Planning</p>
                   </div>
                 </div>

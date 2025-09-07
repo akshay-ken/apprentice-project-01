@@ -36,7 +36,6 @@ function reducerFunction(state, action) {
 }
 export function HeaderSection() {
   const [openState, dispatch] = useReducer(reducerFunction, initialState);
-  console.log(openState);
   return (
     <header className="px-4 md:px-6 py-6 md:py-8 flex flex-row justify-between md:justify-start items-center">
       <img src={logo} alt="" />

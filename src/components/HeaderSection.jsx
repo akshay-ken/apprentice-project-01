@@ -56,24 +56,26 @@ export function HeaderSection() {
               <img src={arrowDown} className="inline w-4 h-2 ml-2" alt="" />
             )}
             {/* popover menu */}
-            <div className=" bg-Gray-50 shadow-[0_0_10px_1px_black] mt-2 absolute p-4 w-38 -ml-12 rounded-2xl flex flex-col items-center gap-2">
-              <div className="flex flex-row">
-                <img src={iconTodo} className="size-4 mr-2" alt="" />
-                <p>Todo List</p>
+            {openState.features.isOpen ? (
+              <div className=" bg-Gray-50 shadow-[0_0_10px_1px_black] mt-2 absolute p-4 w-38 -ml-12 rounded-2xl flex flex-col items-center gap-2">
+                <div className="flex flex-row">
+                  <img src={iconTodo} className="size-4 mr-2" alt="" />
+                  <p>Todo List</p>
+                </div>
+                <div className="flex flex-row">
+                  <img src={iconCalendar} alt="" className="size-4 mr-2" />
+                  <p>Calender</p>
+                </div>
+                <div className="flex flex-row">
+                  <img src={iconReminders} alt="" className="size-4 mr-2" />
+                  <p>Reminder</p>
+                </div>
+                <div className="flex flex-row">
+                  <img src={iconPlanning} alt="" className="size-4 mr-2" />
+                  <p>Planning</p>
+                </div>
               </div>
-              <div className="flex flex-row">
-                <img src={iconCalendar} alt="" className="size-4 mr-2" />
-                <p>Calender</p>
-              </div>
-              <div className="flex flex-row">
-                <img src={iconReminders} alt="" className="size-4 mr-2" />
-                <p>Reminder</p>
-              </div>
-              <div className="flex flex-row">
-                <img src={iconPlanning} alt="" className="size-4 mr-2" />
-                <p>Planning</p>
-              </div>
-            </div>
+            ) : null}
           </li>
           <li
             onClick={() => {

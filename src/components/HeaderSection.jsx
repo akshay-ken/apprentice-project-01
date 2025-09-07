@@ -16,6 +16,9 @@ const initialState = {
   company: {
     isOpen: false,
   },
+  menu: {
+    isOpen: false,
+  },
 };
 function reducerFunction(state, action) {
   if (action.type == "feat") {
@@ -34,14 +37,30 @@ function reducerFunction(state, action) {
       },
     };
   }
+  if (action.type == "menu") {
+    return {
+      ...state,
+      menu: {
+        isOpen: !state.menu.isOpen,
+      },
+    };
+  }
+  return initialState;
 }
 export function HeaderSection() {
   const [openState, dispatch] = useReducer(reducerFunction, initialState);
   return (
     <header className="px-4 md:px-6 py-6 md:py-8 flex flex-row justify-between md:justify-start items-center">
       <img src={logo} alt="" />
-      <img src={menuOpen} className="block md:hidden" alt="" />
-      <MobileMenu />
+      <img
+        src={menuOpen}
+        className="block md:hidden"
+        alt=""
+        onClick={() => {
+          dispatch({ type: "menu" });
+        }}
+      />
+      {openState.menu.isOpen ? <MobileMenu /> : null}
       <nav className="hidden md:flex flex-row ml-20 justify-between w-full text-Gray-500 font-medium text-base">
         <ul className="flex flex-row gap-x-10 ">
           <li

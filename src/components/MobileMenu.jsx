@@ -1,7 +1,9 @@
+import { createPortal } from "react-dom";
 export function MobileMenu() {
-  return (
+  return createPortal(
     <aside>
       <div></div>
-    </aside>
+    </aside>,
+    document.getElementById("menu")
   );
 }

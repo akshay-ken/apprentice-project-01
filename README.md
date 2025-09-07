@@ -45,4 +45,6 @@
 
 - **solution**:- i separated both image and nav tag so i can hide one and show one depending on breakpoints.
 
-> having issue with layout like giving grid row and col values it was taking fr unit for height and width so i thought of using custom values like grid-rows-[40vh_40vh] or grid-cols-[50vh_50vh] then realized vh is making empty white space without any reason so i thought of using vw but then realized i can solve this just buy only using grid cols 2
+> having issue with layout like giving grid row and col values it was taking fr unit for height and width so i thought of using custom values like grid-rows-[40vh_40vh] or grid-cols-[50vh_50vh] then realized vh is making empty white space without any reason so i thought of using vw but then realized i can solve this just buy only using grid cols 2.
+
+> i wanted to do conditional rendering if clicked on features or company navbar link so instead on simple useState hook i decide to go with useReducer hook and reducer function also i render div box with absolute positioning and gave it custom shadow for background effect.

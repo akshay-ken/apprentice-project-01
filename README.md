@@ -26,7 +26,7 @@
 
 ### Links
 
-- Live Site URL: [https://github.com/akshay-ken/rookie-project-07](https://github.com/akshay-ken/rookie-project-07)
+- Live Site URL: [https://apprentice-project-01.netlify.app/](https://apprentice-project-01.netlify.app/)
 
 ## My process
 
